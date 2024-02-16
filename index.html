@@ -1,0 +1,321 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+         
+/* Style for making text green */
+.green-text {
+      color: green; /* Set the desired text color */
+    }
+.gray-text {
+      color: gray; /* Set the desired gray color */
+    }  
+    .custom-font {
+      font-family: 'Arial', sans-serif; /* Set the desired font family */
+    }
+
+
+/* Style for making images oval */
+.oval-image {
+      border-radius: 50%; /* Set border-radius to 50% for oval shape */
+      overflow: hidden; /* Ensure content within the border-radius is visible */
+      width: 400px; /* Set the desired width */
+      height: 300px; /* Set the desired height */
+    }
+
+  
+  /* Style for the orange background */
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      color: #333;
+    }
+
+    /* Style for the main content area */
+    .main-container {
+      height: 300px; /* Set the desired height for the orange background */
+      position: relative;
+    }
+
+    .orange-background {
+      background: orange;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    /* Style for the content within the orange background */
+    .main-content {
+      padding: 20px;
+    }
+
+
+    
+
+    
+
+
+
+
+
+
+        /* Style for the navigation bar */
+    nav {
+      background-color: #b7adad;
+      padding: 10px;
+      text-align: right;
+    }
+
+    /* Style for the navigation links */
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: inline-block;
+    }
+
+    /* Style for the hamburger icon */
+    #hamburger-icon {
+      display: none;
+      cursor: pointer;
+      color: #fff;
+      font-size: 20px;
+      margin-right: 20px;
+    }
+
+    /* Style for the mobile menu */
+    #mobile-menu {
+      display: none;
+    }
+
+    /* Media query for responsiveness */
+    @media only screen and (max-width: 768px) {
+      nav a {
+        display: none;
+      }
+
+      #hamburger-icon {
+        display: inline-block;
+      }
+
+      #mobile-menu.show {
+        display: block;
+      }
+    }
+
+
+
+
+
+ /* Style for the container with scrollbar */
+ .scroll-container {
+      width: 300px;
+      height: 200px;
+      overflow-y: scroll;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    /* Style for the scrollbar */
+    .scroll-container::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Style for the scrollbar track */
+    .scroll-container::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Style for the scrollbar handle */
+    .scroll-container::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Style for the scrollbar handle on hover */
+    .scroll-container::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+
+    /* Style for the container */
+    .container {
+      text-align: center;
+      margin-top: 50px; /* Adjust the margin as needed */
+    }
+
+    /* Style for the text */
+    .content {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+     /* Style for the container */
+     .container {
+      text-align: center;
+      margin-top: 50px; /* Adjust the margin as needed */
+    }
+
+    /* Style for the oval rectangular-shaped tab */
+    #ovalTab {
+      display: inline-block;
+      background-color: #f26b1c;
+      color: #fff;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 50px 50px 0 0; /* Creates an oval shape */
+    }
+
+    /* Style for the heading */
+    .heading {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+          
+        </style>
+
+
+ <!-- Swiper CSS -->
+ <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+ <style>
+   /* Customize your image container styles here */
+   .swiper-container {
+     width: 90%;
+     margin:auto;
+   }
+
+   .swiper-slide img {
+     width: 90%;
+     height: auto;
+   }
+ </style>
+
+
+    </head>
+    <body>
+
+       <!-- Navigation bar -->
+  <nav>
+    <span id="hamburger-icon" onclick="toggleMobileMenu()">☰</span>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu">
+    <a href="#" onclick="toggleMobileMenu()">Home</a>
+    <a href="#" onclick="toggleMobileMenu()">About</a>
+    <a href="#" onclick="toggleMobileMenu()">Services</a>
+  </div>
+
+  <script>
+    // JavaScript function to toggle the visibility of the mobile menu
+    function toggleMobileMenu() {
+      var mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('show');
+    }
+  </script>
+       
+<center>
+<center><h1>24 CARROTS</h1></center>
+<center><p class="gray-text" style="font-size:14px">CATERING AND EVENTS</p></center><br>
+
+<center><video width="500" height="500" autoplay muted loop>
+    <source src="pexels-sunsetoned-5913245 (2160p).mp4" type="video/mp4">
+    
+    
+  </video></center>
+<br>
+  <h3 class="gray-text"> WELCOME TO 24 CARROTS</h3><br>
+  <h1 class="green-text">Remarkable Catering & Events</h1>
+  <p class="custom-font">24 Carrots is the premier catering and events company of choice in Southern California. We create remarkable experiences by offering the finest quality foods and providing unsurpassed personalized service, driven by our passion for life’s special occasions.</p>
+
+<div class="container">
+    <!-- Oval rectangular-shaped tab -->
+    <div id="ovalTab">Get in Touch</div> <br><br><br>
+
+
+    
+<!-- Swiper Container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="Bunny2.jpg" alt="Image 1"></div>
+      <div class="swiper-slide"><img src="Bunny3.jpg" alt="Image 2"></div>
+      <div class="swiper-slide"><img src="Bunny4.jpg" alt="Image 3"></div>
+      <!-- Add more slides as needed -->
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000, // Time in milliseconds between slides
+        disableOnInteraction: false, // Enable autoplay even if the user interacts with the slider
+      },
+    });
+  </script>    
+
+
+<h1 class="green-text">Making Every Experience Magical</h1><br>
+<center>
+<div class="oval-image">
+<img src="Magical.jpg" alt="Image below three bunnies" width="100%" height="100%">
+</div></center>
+<br>
+<h1>Weddings</h1>
+<p class="gray-text">EXCEPTIONAL WEDDINGS</p>
+<p class="custom-font">The most important day of your life, is ours too. Your wedding should be the ultimate celebration of your relationship, and our team of experts guide you through the process, offering peace of mind and a remarkable experience.</p>
+
+<br><br>
+
+<!-- Container for the orange background -->
+<div class="main-container">
+    <div class="orange-background"></div>
+    <!-- Main content area within the orange background -->
+    <div class="main-content">
+      <h1>Endless Inspiration</h1>
+      <p>Sign up to our newsletter for fresh updates, encouragement, and exclusive insights.</p>
+      
+      <div id="ovalTab">Sign up here</div>
+
+
+    </div>
+  </div>
+
+  <!-- Additional content outside the orange background -->
+  <div>
+    <p>Just a replica of home page created for an assignment.</p>
+  </div>
+
+
+</center>
+
+
+
+    </body>
+</html>
